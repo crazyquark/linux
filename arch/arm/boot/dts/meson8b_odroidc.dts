@@ -171,6 +171,14 @@
         status = "okay";
     };
 
+    amvideocap {
+	compatible = "amlogic,amvideocap";
+	dev_name = "amvideocap.0";
+	status = "okay";
+	reserve-memory = <0x00800000>;//1920*1088*4
+	reserve-iomap = "true";
+    };
+
     rtc {
         compatible = "amlogic,aml_rtc";
         status = "okay";
